@@ -11,7 +11,7 @@ comments: false
 <p>I am a Machine Learning/Deep Learning Enthusiast and a hardcore Linux guy. I am an Electronics an Communications Engineering udergrad at the Institute of Engineering & Management, Kolkata. Passionate about Computer Vision and NLP, I quite enjoyed my time at the Signals and Image Processing Lab, IIT KGP under Prof. Dr. Debdoot Sheet where I picked up on applying adverserial Learning techniques on Biomedical Imaging problems. I have a publication at ICASSP, 2019 on Video Generation which can be found <a href="https://ieeexplore.ieee.org/document/8682158">here</a>! </p>
 
 <p>Other than all that and programming , I love football, badminton and occassionally fall for volleyball and table tennis(unsuccessfully XD). For a bit more of a formal Introduction, do check below!</p> 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/res.png" alt="jekyll template mediumish" /></p>
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/res.png" alt="Resume" /></p>
 <h4>Documentation</h4>
 
 <p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
@@ -25,11 +25,12 @@ comments: false
 <div class="col-md-4">
 
 <div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
+<h5>Connect with me!</h5>
 
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
+<p>Your suggestions and connections keeps me encouraged and helps me to improve!
+<!-- <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p> -->
 
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
+<a target="_blank" href="https://github.com/another-dark-knight" class="btn btn-danger">Github</a> <a target="_blank" href="https://www.linkedin.com/in/spandanghosh2/" class="btn btn-warning">LinkedIn</a>
 
 </div>
 </div>
