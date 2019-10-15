@@ -1,15 +1,16 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: Who am I???
 permalink: /about
-comments: true
+comments: false
 ---
 
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+<p>I am a Machine Learning/Deep Learning Enthusiast and a hardcore Linux guy. I am an Electronics an Communications Engineering udergrad at the Institute of Engineering & Management, Kolkata. Passionate about Computer Vision and NLP, I quite enjoyed my time at the Signals and Image Processing Lab, IIT KGP under Prof. Dr. Debdoot Sheet where I picked up on applying adverserial Learning techniques on Biomedical Imaging problems. I have a publication at ICASSP, 2019 on Video Generation which can be found <a href="https://ieeexplore.ieee.org/document/8682158">here</a>! </p>
 
+<p>Other than all that and programming , I love football, badminton and occassionally fall for volleyball and table tennis(unsuccessfully XD). For a bit more of a formal Introduction, do check below!</p> 
 <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
 <h4>Documentation</h4>
 
