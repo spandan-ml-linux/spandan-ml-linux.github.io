@@ -28,7 +28,8 @@ comments: false
 <h5>Connect with me!</h5>
 
 <p>Your suggestions and connections keeps me encouraged and helps me to improve!
-<!-- <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p> -->
+<!-- <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.-->
+</p> 
 
 <a target="_blank" href="https://github.com/another-dark-knight" class="btn btn-danger">Github</a> <a target="_blank" href="https://www.linkedin.com/in/spandanghosh2/" class="btn btn-warning">LinkedIn</a>
 
