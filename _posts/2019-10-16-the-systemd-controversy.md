@@ -3,7 +3,7 @@ layout: page
 title:  "Systemd... Why? Why not? Runit ????"
 author: spandan
 categories: [ Linux, tutorial ]
-tags: [red, yellow]
+tags: [linux, systemd]
 description: "All that bloat ain't evil -> All that minimal aint tough!"
 featured: true
 hidden: false
