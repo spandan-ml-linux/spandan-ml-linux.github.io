@@ -1,7 +1,6 @@
-### The systemd Controversy
 ---
 layout: post
-title:  "The Systemd Controversy"
+title:  "Systemd... Why? Why not? Runit ????"
 categories: [ Jekyll, linux ]
 image: _posts/linux/systemd/Screenshot_2019-08-13_22-57-29.png
 ---
