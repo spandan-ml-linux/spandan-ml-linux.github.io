@@ -2,7 +2,7 @@
 layout: page
 title:  "Systemd... Why? Why not? Runit ????"
 author: spandan
-categories: [ Jekyll, tutorial ]
+categories: [ Linux, tutorial ]
 tags: [red, yellow]
 description: "All that bloat ain't evil -> All that minimal aint tough!"
 featured: true
