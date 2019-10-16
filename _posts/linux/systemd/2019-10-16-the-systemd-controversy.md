@@ -1,7 +1,14 @@
 ---
 layout: post
 title:  "Systemd... Why? Why not? Runit ????"
-categories: [ Jekyll, linux ]
+author: spandan
+categories: [ Jekyll, tutorial ]
+tags: [red, yellow]
+description: "All that bloat ain't evil -> All that minimal aint tough!"
+featured: true
+hidden: true
+rating: 4.5
+layout: post
 image: _posts/linux/systemd/Screenshot_2019-08-13_22-57-29.png
 ---
 
