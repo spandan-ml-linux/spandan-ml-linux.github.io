@@ -31,7 +31,7 @@ comments: false
 <!-- <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.-->
 </p> 
 
-<a target="_blank" href="https://github.com/another-dark-knight" class="btn btn-danger">Github</a> <a target="_blank" href="https://www.linkedin.com/in/spandanghosh2/" class="btn btn-warning">LinkedIn</a>
+<a target="_blank" href="https://github.com/spandan-ml-linux" class="btn btn-danger">Github</a> <a target="_blank" href="https://www.linkedin.com/in/spandanghosh2/" class="btn btn-warning">LinkedIn</a>
 
 </div>
 </div>
