@@ -4,7 +4,7 @@ title: "Spandan Ghosh"
 description: "Machine Learning, Linux (BTW I use Arch XD), Programming, Poetry"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-url: 'https://github.com/another-dark-knight'
+url: 'https://github.com/spandan-ml-linux'
 baseurl: '/'
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
@@ -19,7 +19,7 @@ authors:
     display_name: Spandan
     gravatar: 8af12cfc98be4ba0f61394eedf0e6fa9
     email: spandanghosh2@gmail.com
-    web: https://another-dark-knight.github.io/
+    web: https://spandan-ml-linux.github.io/
     twitter: https://twitter.com/spandanghosh
     description: "Blog Author, ECE Student, Institute of Engineering & Management, Kolkata"
 # Plugins
