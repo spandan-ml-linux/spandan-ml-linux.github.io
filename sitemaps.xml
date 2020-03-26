@@ -6,4 +6,17 @@
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+
+   <url>
+      <loc>https://spandanji.github.io//the-systemd-controversy/</loc>
+      <lastmod>2020-03-27</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://spandanji.github.io//Remembering-one's-roots/</loc>
+      <lastmod>2020-03-27</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
 </urlset> 
