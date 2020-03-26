@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "The apparent 'fallacy' of the root Root password"
+title:  "The apparent 'fallacy' of the Root password"
 author: spandan
 categories: [ Linux, tutorial ]
 tags: [linux, grub]
@@ -21,7 +21,8 @@ Sad!! Typically you would saya that it this is one reason why one bust keep back
 
 However, there are ways to overcome this and gain passwordless root access to your Linux System. The first one is quite simple.
 
-#### Boot the LiveCD open up the terminal and mount the root partition of your main system.
+
+#### Method 1 : Boot the LiveCD open up the terminal and mount the root partition of your main system.
 ``` 
 # mkdir mnt
 # mount /dev/sdX mnt
@@ -34,6 +35,9 @@ However, there are ways to overcome this and gain passwordless root access to yo
 
 That said, you may not have a live linux usb with you or you may not have access to the internet or another machine to go and get the iso and flash the usb.
 
+#### Method 2 : Use the init= parameter while loading the linux kernel in the GRUB bootloader
+
+
 So, in most of the cases you are using the GRUB bootloader which shows up at boot time. 
 
 1.  Select the appropriate boot entry in the GRUB menu and press e to edit the line.
@@ -41,7 +45,9 @@ So, in most of the cases you are using the GRUB bootloader which shows up at boo
 3.  Append **init=/bin/bash** at the end of line.
 4.  Press **Ctrl-X** to boot (this change is only temporary and will not be saved to your menu.lst). After booting you will be at the bash prompt.
 5.  Your root file system is mounted as readonly now, so remount it as read/write 
+
 **```# mount -n -o remount,rw /```** .
+
 6.  Use the passwd command to create a new root password.
 7.  Reboot by typing ```# reboot -f``` and do not lose your password again!
 
