@@ -38,11 +38,12 @@ So, in most of the cases you are using the GRUB bootloader which shows up at boo
 
 1.  Select the appropriate boot entry in the GRUB menu and press e to edit the line.
 2.  Select the kernel line and press e again to edit it.(the line show in the first figure)
-3.  Append init=/bin/bash at the end of line.
-4.  Press Ctrl-X to boot (this change is only temporary and will not be saved to your menu.lst). After booting you will be at the bash prompt.
-5.  Your root file system is mounted as readonly now, so remount it as read/write mount -n -o remount,rw /.
+3.  Append **init=/bin/bash** at the end of line.
+4.  Press **Ctrl-X** to boot (this change is only temporary and will not be saved to your menu.lst). After booting you will be at the bash prompt.
+5.  Your root file system is mounted as readonly now, so remount it as read/write 
+**```# mount -n -o remount,rw /```** .
 6.  Use the passwd command to create a new root password.
-7.  Reboot by typing reboot -f and do not lose your password again!
+7.  Reboot by typing ```# reboot -f``` and do not lose your password again!
 
 Why does this work? To understand this you must understand init systems in general. Go over and read <a href="https://spandanji.github.io/the-systemd-controversy/">this</a>! Now you probably understand. **init=** mentions the init system. Now, that is the first process to launch. **init=/bin/bash** fires up the terminal just after the partitions have been mounted and no process has been initiated yet and you have root access. 
 
