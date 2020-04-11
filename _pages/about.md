@@ -15,7 +15,6 @@ comments: false
 <object data="{{site.baseurl}}/assets/resume (1).pdf" type="application/pdf" width="780px" height="850px">
     <embed src="{{site.baseurl}}/assets/images/resume (1).pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="{{site.baseurl}}/assets/images/resume (1).pdf">Download PDF</a>.</p>
-    </embed>
 </object>
 <h4>Documentation</h4>
 
