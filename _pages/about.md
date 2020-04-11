@@ -13,8 +13,9 @@ comments: false
 <p>Other than all that and programming , I love football, badminton and occassionally fall for volleyball and table tennis(unsuccessfully XD). For a bit more of a formal Introduction, do check below!</p> 
 <!--<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/res.png" alt="Resume" /></p>-->
 <object data="{{site.baseurl}}/assets/resume (1).pdf" type="application/pdf" width="780px" height="850px">
-    <embed src="{{site.baseurl}}/assets/images/resume (1).pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="{{site.baseurl}}/assets/images/resume (1).pdf">Download PDF</a>.</p>
+    <embed src="https://drive.google.com/viewerng/
+viewer?embedded=true&url={{site.baseurl}}/assets/images/resume (1).pdf" width="780px" height="850px">
+    <!--    <p>This browser does not support PDFs. Please download the PDF to view it: <a href="{{site.baseurl}}/assets/images/resume (1).pdf">Download PDF</a>.</p>-->
 </object>
 <h4>Documentation</h4>
 
