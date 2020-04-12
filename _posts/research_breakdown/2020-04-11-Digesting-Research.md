@@ -1,5 +1,5 @@
 ---
-title:  "Digesting Reasearch"
+title:  "Digesting Research"
 author: spandan
 categories: [ Paper Analysis, Deep Learning ]
 tags: [cover, intro]
