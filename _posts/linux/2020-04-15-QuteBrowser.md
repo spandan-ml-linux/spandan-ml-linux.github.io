@@ -57,7 +57,7 @@ Or open up your browser and type
 ```vimscript
 :config-set
 ```
-The config.py file is as follows
+The config.py file is as follows. I have skipped several custom set keybindings so as to not affect your workflow or your use of the defaults. All except the mpv spawner ( Simply cause I love using it too much).
 
 ```python
 def bind_header(url_wild_card, alt_header='Mozilla/5.0 ({os_info}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36'):
