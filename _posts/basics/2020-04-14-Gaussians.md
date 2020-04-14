@@ -3,7 +3,7 @@ title:  "Gaussians, Multivariate Gaussians and Halluciantions from such distribu
 author: spandan
 categories: [ Basics, Machine Learning ]
 tags: [cover, intro]
-description: ""
+description: "Gaussians : Simple yet so very important"
 featured: false
 hidden: false
 layout: post
