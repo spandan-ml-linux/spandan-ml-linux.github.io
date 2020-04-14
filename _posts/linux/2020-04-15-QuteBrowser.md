@@ -107,8 +107,8 @@ Let's end this by looking at two cool features:
 1.  I want to play an youtube video while doing something else. So, I can spawn it onto mpv to play on my gpu using the keybinding
 **,v** and this does consume lesser Ram and power than playing it on the browser.
 
-![MPV-SPAWN](https://i.imgur.com/nfrU5KZ.gifv)
+![MPV-SPAWN](https://github.com/spandanji/spandanji.github.io/raw/master/assets/video/qutempv.gif)
 
 2. Suppose I want to download the current page as an html file. **:download** or **gd**
 
-![Imgur](https://i.imgur.com/hCvbQaL.gifv)
+![download](https://github.com/spandanji/spandanji.github.io/raw/master/assets/video/download_page.gif)
