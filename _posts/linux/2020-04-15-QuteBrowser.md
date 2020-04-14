@@ -99,7 +99,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 config.bind(',v', 'spawn mpv -vo=gpu {url}')
 
 ```
-I omitted out my colorscheme as the code would be too long to discuss. But an autoamated colorsheme may be setup using the 
+Some websites like whatsapp web and NetFlix respond better to a known header and hence I have set the browser header for these. I omitted out my colorscheme as the code would be too long to discuss. But an autoamated colorsheme may be setup using the 
 qutebrowser base16 configurations as available <a href="https://github.com/theova/base16-qutebrowser">this repository.</a>
 
 Let's end this by looking at two cool features:
@@ -112,3 +112,9 @@ Let's end this by looking at two cool features:
 2. Suppose I want to download the current page as an html file. **:download** or **gd**
 
 ![download](https://github.com/spandanji/spandanji.github.io/raw/master/assets/video/download_page.gif)
+
+It is to be noted that you may notice that hardware acceleration for decoding and several others have been disabled or are being software rendered. You may or may not like this. If you do not like this and would like hardware accelerated decoding,rasterization etc, run qutebrowser using the following command. 
+```bash
+qutebrowser --qt-flag ignore-gpu-blacklist --qt-flag enable-gpu-rasterization --qt-flag enable-native-gpu-memory-buffers --qt-flag num-raster-threads=4
+```
+So go on, download install and enjoy.
