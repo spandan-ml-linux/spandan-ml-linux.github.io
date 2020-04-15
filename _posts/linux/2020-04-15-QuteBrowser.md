@@ -11,11 +11,11 @@ image: assets/images/linux/qute.png
 comments: false
 ---
 Being someone who strives to have a steamlined, minimal setup and someone who doesn't like to go and take his/her hands off the keyboard and 
-place it on the mouse (too much work XD), I have been pretty bugged that I did not have a minimal browser to be used in my daily
-workflow ie. not just for bragging rights. I had surf by suckless but somehow pags with too much graphics were not as responsive as 
+place it on the mouse (too much work XD), I had been pretty bugged that I did not have a minimal browser to be used in my daily
+workflow ie. not just for bragging rights. I had surf by suckless but somehow pages with too much graphics were not as responsive as 
 Firefox (Maybe I am yet to set it up right).
 
-Using Vim in my everyday workflow has further spoiled me. I love Vim keybindings. I love them so much that even if and when I set up Emacs,
+Using Vim in my everyday workflow has further spoiled me. I love Vim keybindings. I love them so much that even when I set up Emacs,
 (I love org-mode), the first thing I set up is the EVIL key bindings. First thing that fascinated me about qutebrowser : These beautiful
 keybindings. I have also heard of VimB but I am yet to find a reason to move to it. So, make sure you are in INSERT mode while typing.
 Here is the official keybinding cheetsheet from their <a href="https://github.com/qutebrowser/qutebrowser">Github page</a>.
