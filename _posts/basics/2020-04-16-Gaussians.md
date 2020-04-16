@@ -100,3 +100,14 @@ COV [X] =
 \end{pmatrix}
 \end{equation*}
 $$
+
+It is denoted by $$\Sigma$$. This matrix is symmetric in nature and knowing the upper triangular part or the lower triangular part would be **sufficient** to replicate the matrix entirely.  
+
+Let us define the multivariate Gaussian here and then go into a sanity or validity check. This is the gaussian function in higher dimensions (say d dimensions):
+
+$$ \begin{equation}
+      \label{multivarate_gaussian}
+            N(X | \mu, \Sigma) := {1 \over {{2\pi}}^{d\over 2} {|\Sigma|}^{1 \over 2}} e ^{-{1 \over 2}(X - \mu)^T \Sigma^{-1}(X - \mu) }
+\end{equation} $$
+
+$$ \textbf{X} = (X_1, X_2, X_3, \dots , X_d) $$ where each $$X_k$$ is a random variable and $$ \textbf{\mu} = (\mu_1, \mu_2, \mu_3, \dots , \mu_d) $$
