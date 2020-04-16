@@ -64,10 +64,22 @@ The Expectation of a PDF refers to the most likely result of a single simulation
 
 $$ \begin{equation}
       \label{expectation}
-            \mathdd{E}(x) = \int_{-\infty}^{x} x p(x) dx = \mu = {1 \over N} \Sigma_{i=1}^N X^{(i)}
+            \mathbb{E}(x) = \int_{-\infty}^{x} x p(x) dx = \mu = {1 \over N} \Sigma_{i=1}^N X^{(i)}
     \end{equation} $$
   
   The second equality to the summation os only valid for large values of $$N$$ in which case the sum converges to the integral for random variables. This is known as the **Monte Carlo convergence**. 
   
 Gaussians also have importance from the perspective of adding information to models. In the frequency domain, Gaussians are just a line parallel to the X-axis and are familiar to communication Engineers as AWGN. It does not discriminate but adds equally with all frequency components of a signal. **Thus, in Generative models, the use of Gaussians further indicates the addition of the minimum possible bias to the model.**
 
+### Covariance and multivariate Gaussians 
+
+Covariance of two R.Vs X and Y tell us to what extent X and Y are Linearly related.
+
+$$
+\begin{equation}
+    \label{covariance}
+        cov[X,Y] = \mathbb{E[(X- \mathbb{E}[X])(Y- \mathbb{E}[Y])} = \mathbb{E}[XY]-\mathbb{E}[X]\mathbb{E}[Y]
+\end{equation}
+$$
+
+Note : $$ cov[X,X] = Var[X] = \sigma^2(X) $$
