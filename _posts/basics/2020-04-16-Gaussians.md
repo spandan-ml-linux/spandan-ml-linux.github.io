@@ -18,5 +18,5 @@ Let's first simply look at Gaussians as a curve in mathematics, and then we will
 
 $$ \begin{equation}
       \label{GaussianEq}
-            p(x) = {1 \over \sqrt{2\pi\sigma^2}} e^{- {1 \over 2 \sigma^2}(x - \mu)^2}
+            p(x) = {1 \over \sqrt{2\pi\sigma^2}} \hspace{0.1cm} e^{- {1 \over 2 \sigma^2}(x - \mu)^2}
     \end{equation} $$
