@@ -85,7 +85,7 @@ $$
 Note : $$ cov[X,X] = Var[X] = \sigma^2(X) $$ and $$ cov[X,Y] = cov[Y,X] $$
 
 The covariance matrix of a d-length vector $$\textbf{X}$$ where each feature is a random variable, on the other hand gives us an idea of how each feature is related with respect to the others. 
-ie. for $$ \textbf{X} = (x_1, x_2, x_3, \dots , x_d) $$ where each $$x_k$$ is a random variable, The covariance matrix is as shown,
+ie. for $$ \textbf{X} = (X_1, X_2, X_3, \dots , X_d) $$ where each $$X_k$$ is a random variable, The covariance matrix is as shown,
 
 
 $$
@@ -93,10 +93,10 @@ $$
 \label{covmat}
 COV [X] = 
 \begin{pmatrix}
-    VAR[x_1] & COV[x_1, x_2] & COV[x_1, x_3] & \ldots & COV[x_1, x_d] \\
-    COV[x_2, x_1] & VAR[x_2] & COV[x_2, x_3] & \ldots & COV[x_2, x_d] \\
+    VAR[X_1] & COV[X_1, X_2] & COV[X_1, X_3] & \ldots & COV[X_1, X_d] \\
+    COV[X_2, X_1] & VAR[X_2] & COV[X_2, X_3] & \ldots & COV[X_2, X_d] \\
     \vdots & \vdots & \vdots & \ldots & \vdots \\
-    COV[x_d, x_1] & COV[x_d, x_2] & COV[x_d, x_2] &\ldots & VAR[x_d]
+    COV[X_d, X_1] & COV[X_d, X_2] & COV[X_d, X_2] &\ldots & VAR[X_d]
 \end{pmatrix}
 \end{equation*}
 $$
