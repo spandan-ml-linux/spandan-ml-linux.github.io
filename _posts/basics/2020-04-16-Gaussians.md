@@ -28,4 +28,6 @@ Let us have a look at this curve and draw inferences on its nature.
 
 ![Gaussian normal](https://i.imgur.com/T3mzcsF.png)
 
-The highest point of this curve corresponds to \\( x = \mu \\) 
+The highest point of this curve corresponds to \\( x = \mu \\) . We have taken a special case where \\( \mu = 0 \\) and \\( \sigma = 1 \\). In such a case, these are known as normalized Gaussians. Notice the cover figure of the post, the position of the different peaks are the means of those curves. \\( \sigma \\) tells us distribuited the data is away from the mean. So, the more spread out the curve, the higher is the value of \\( \sigma \\). 
+
+Note thar $$ \int_{-\infty}^{+\infty} x p(x) dx = 1 $$. This means that the y-axis of the curve represents probabilities of the corresponding x values. If we have a set of values of x that are Gaussian distributed, ie $$ \textbf{x} : \{x_1, x_2, x_3, \dots\}$$ 
