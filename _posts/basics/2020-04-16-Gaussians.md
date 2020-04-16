@@ -49,3 +49,25 @@ $$ \begin{equation}
  Graphically, 
  
  ![CDF](https://i.imgur.com/MVQJfhz.png)
+
+To sample from the Gaussian distribution, we will use the PDF, CDF and a random number generator(RNG). RNG functions are implemented in all popular programming languages. We will use a random number geneator $rng(x) \in [0,1]$. This follows a uniform distribution and all values are equiprobable.
+
+Let us now have a look at the process.
+
+![Sampling](https://i.imgur.com/7TrphpU.png)
+
+For a single output of the RNG, say 0.65, we would project it on to the CDF and take the corresponding value of $$x$$. Notice how a large portion of the rng numbers would project itself onto the linear section of the graph and thus be closer to the mean, as controlled by the variance. We are consistent with our PDF in this approach.
+
+### Expectation , Monte Carlo convergence and a reference to Information
+
+The Expectation of a PDF refers to the most likely result of a single simulation of a PDF.  For Gaussian distributions, this is easily visualizable from the graph that the mean is the expected value. if we encounter any random variable **x**,  it is by the expectation that we define the mean.
+
+$$ \begin{equation}
+      \label{expectation}
+            \mathdd{E}(x) = \int_{-\infty}^{x} x p(x) dx = \mu = {1 \over N} \Sigma_{i=1}^N X^{(i)}
+    \end{equation} $$
+  
+  The second equality to the summation os only valid for large values of $$N$$ in which case the sum converges to the integral for random variables. This is known as the **Monte Carlo convergence**. 
+  
+Gaussians also have importance from the perspective of adding information to models. In the frequency domain, Gaussians are just a line parallel to the X-axis and are familiar to communication Engineers as AWGN. It does not discriminate but adds equally with all frequency components of a signal. **Thus, in Generative models, the use of Gaussians further indicates the addition of the minimum possible bias to the model.**
+
