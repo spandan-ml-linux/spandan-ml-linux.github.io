@@ -107,7 +107,7 @@ Let us define the multivariate Gaussian here and then go into a sanity or validi
 
 $$ \begin{equation}
       \label{multivarate_gaussian}
-            N(X | \mu, \Sigma) := {1 \over {{2\pi}}^{d\over 2} {|\Sigma|}^{1 \over 2}} e ^{-{1 \over 2}(X - \mu)^T \Sigma^{-1}(X - \mu) }
+            N(X | \mu, \Sigma) := {1 \over {(2\pi)}^{d\over 2} {|\Sigma|}^{1 \over 2}} e ^{-{1 \over 2}(X - \mu)^T \Sigma^{-1}(X - \mu) }
 \end{equation} $$
 
-$$ \textbf{X} = (X_1, X_2, X_3, \dots , X_d) $$ where each $$X_k$$ is a random variable and $$ \textbf{\mu} = (\mu_1, \mu_2, \mu_3, \dots , \mu_d) $$
+$$ \textbf{X} = (X_1, X_2, X_3, \dots , X_d) $$ where each $$X_k$$ is a random variable and $$ \mu = (\mu_1, \mu_2, \mu_3, \dots , \mu_d) $$
