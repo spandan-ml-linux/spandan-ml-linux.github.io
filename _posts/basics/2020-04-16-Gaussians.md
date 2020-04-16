@@ -30,4 +30,22 @@ Let us have a look at this curve and draw inferences on its nature.
 
 The highest point of this curve corresponds to \\( x = \mu \\) . We have taken a special case where \\( \mu = 0 \\) and \\( \sigma = 1 \\). In such a case, these are known as normalized Gaussians. Notice the cover figure of the post, the position of the different peaks are the means of those curves. \\( \sigma \\) tells us distribuited the data is away from the mean. So, the more spread out the curve, the higher is the value of \\( \sigma \\). 
 
-Note thar $$ \int_{-\infty}^{+\infty} x p(x) dx = 1 $$. This means that the y-axis of the curve represents probabilities of the corresponding x values. If we have a set of values of x that are Gaussian distributed, ie $$ \textbf{x} : \{x_1, x_2, x_3, \dots\}$$ 
+Note that $$ \int_{-\infty}^{+\infty} p(x) dx = 1 $$. This means that the fucntion is a Probability Distribution Function. If we have a set of values of x that are Gaussian distributed, ie $$ \textbf{x} : \{x_1, x_2, x_3, \dots\}$$ , then we mean to say that their occurence that a sample from **x** being some \\( x_k\\) follows the probability as per the curve depeinding on them mean of x \\( \mu_x \\) and the standard deviation \\( \sigma_x \)). \\( \mu \\) and \\( \sigma \\) are the only two parameters needed to get this distribution and hence they are together referred to as the **sufficient statistics.** 
+
+Looking at Machine learning from this point of view, we are all looking to develop models that find the "sufficient statistics" for realizing a function. 
+
+### Simulation or Hallucination
+
+From what has already been discussed, we should be able to infer the meaning of a distribution and its points. But, quite often in machine learning, we have to sample values from a given Gaussian distribution to get an array of certain dimensions. Eg: make an array of 100 numbers such that they are from the Gaussian given by mean=0 and standard deviation=0.2. This process of sampling is called **Simulation or Hallucination.** 
+
+It may be denoted as $$ \textbf{x} \sim N(\mu, \sigma^2) $$. 
+To Understand this let us look as the Cumulative Distribution function which is as shown :
+
+$$ \begin{equation}
+      \label{CDF}
+            F(x) = P(X \leq x) = \int_{-\infty}^{x} p(u) du
+    \end{equation} $$
+ 
+ Graphically, 
+ 
+ ![CDF](https://i.imgur.com/MVQJfhz.png)
