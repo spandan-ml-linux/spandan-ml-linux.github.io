@@ -78,8 +78,22 @@ Covariance of two R.Vs X and Y tell us to what extent X and Y are Linearly relat
 $$
 \begin{equation}
     \label{covariance}
-        cov[X,Y] = \mathbb{E[(X- \mathbb{E}[X])(Y- \mathbb{E}[Y])} = \mathbb{E}[XY]-\mathbb{E}[X]\mathbb{E}[Y]
+        cov[X,Y] = \mathbb{E}[(X- \mathbb{E}[X])(Y- \mathbb{E}[Y]) = \mathbb{E}[XY]-\mathbb{E}[X]\mathbb{E}[Y]
 \end{equation}
 $$
 
-Note : $$ cov[X,X] = Var[X] = \sigma^2(X) $$
+Note : $$ cov[X,X] = Var[X] = \sigma^2(X) $$ and $$ cov[X,Y] = cov[Y,X] $$
+
+The covariance matrix of a d-length vector $$\textbf{X}$$ where each feature is a random variable, on the other hand gives us an idea of how each feature is related with respect to the others. 
+ie. for $$ \textbf{X) = (x_1, x_2, x_3, \dots, x_d} $$ where each $$x_k$$ is a random variable, The covariance matrix is as shown,
+$$
+\begin{equation*}
+COV [X] = 
+\begin{pmatrix}
+    VAR[x_1] & COV[x_1, x_2] & COV[x_1, x_3] & \ldots & COV[x_1, x_d] \\
+    COV[x_2, x_1] & VAR[x_2] & COV[x_2, x_3] & \ldots & COV[x_2, x_d] \\
+    \vdots & \vdots & \vdots & \ldots & \vdots \\
+    COV[x_d, x_1] & COV[x_d, x_2] & COV[x_d, x_2] &\ldots & VAR[x_d]
+\end{pmatrix}
+\end{equation*}
+$$
