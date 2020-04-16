@@ -20,7 +20,9 @@ $$ \begin{equation}
       \label{GaussianEq}
             p(x) = {1 \over \sqrt{2\pi\sigma^2}} \hspace{0.1cm} e^{- {1 \over 2 \sigma^2}(x - \mu)^2}
     \end{equation} $$
- where \\( \mu = mean of all values of x and \sigma = the standard variance of all values of x \\). We shall show these later
+ 
+ 
+where \\( \mu \\)= mean of all values of x and \\(\sigma \\)= the standard variance of all values of x. We shall show these later
 
 Let us have a look at this curve and draw inferences on its nature. 
 
