@@ -127,8 +127,6 @@ Since this matrix is symmetric, we only need one of $$COV[x_1, x_2]$$ or $$COV[x
 
 Let us use this 2D distribution to have a look at the joint probability distribution. That is the probability of a sample of $$x_1$$ and a sample of $$x_2$$ occuring at the same time.
 
-$$P(x_1, x_2) = P(x_2| x_1)P(x_1) $$  as indicated by the yellow region.
-
 ![joint dist](https://i.imgur.com/Q5zfItq.png)
 
 Let's define the matrix notations. $$X$$ and $$\mu$$ are column vectors.
@@ -153,20 +151,17 @@ $$
 
 Now let's explot the independence of $$x_1$$ and $$x_2$$ meaning $$P(x_2 | x_1) = P(x_2)$$,
 
-$$
-
-\begin{align*}
+$$\begin{align*}
 P(x_1,x_2) &= P(x_2 | x_1) P(x_1) \\
 &= P(x_2) * P(x_1) \\
 &= {1 \over \sqrt{2\pi\sigma^2}}e^{-{1 \over {2\sigma^2}}(x_2 - \mu_1)^2} * {1 \over \sqrt{2\pi\sigma^2}}e^{-{1 \over {2\sigma^2}}(x_2 - \mu_2)^2} \\
 &= {1 \over 2\pi|\Sigma|^{1 \over 2}}e^{(-{1 \over 2}[(x_1 - \mu_1)(x_2 - \mu_2)] \begin{pmatrix}\sigma^2 & 0 \\ 0 & \sigma^2 \end{pmatrix}^{-1} \begin{pmatrix}x_1 - \mu_1 \\ x_2 - \mu_2 \end{pmatrix})} \\
 &= {1 \over {(2\pi)}^{d\over 2} {|\Sigma|}^{1 \over 2}} e ^{-{1 \over 2}(X - \mu)^T \Sigma^{-1}(X - \mu) }
 \end{align*} $$
-$$
-\begin{equation}
+
+$$\begin{equation}
 \label{final}
 \therefore P(x_1,x_2)={1 \over {(2\pi)}^{d\over 2} {|\Sigma|}^{1 \over 2}} e ^{-{1 \over 2}(X - \mu)^T \Sigma^{-1}(X - \mu) }
-\end{equation}
-$$
+\end{equation}$$
 
 We see that \ref{final} is the same as the expression for multivariate Gaussians. This fundamental understanding is crucial to grasping the concepts of likelihood and Maximum Likelihood Estimation which shall be the next post in this **Basics** section.
