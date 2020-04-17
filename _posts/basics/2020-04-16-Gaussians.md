@@ -69,7 +69,7 @@ $$ \begin{equation}
   
   The second equality to the summation os only valid for large values of $$N$$ in which case the sum converges to the integral for random variables. This is known as the **Monte Carlo convergence**. 
   
-Gaussians also have importance from the perspective of adding information to models. In the frequency domain, Gaussians are just a line parallel to the X-axis and are familiar to communication Engineers as AWGN. It does not discriminate but adds equally with all frequency components of a signal. **Thus, in Generative models, the use of Gaussians further indicates the addition of the minimum possible bias to the model.**
+Gaussians also have importance from the perspective of adding information to models. In the frequency domain, Gaussians are just a line parallel to the X-axis and are familiar to communication Engineers as AWGN. It does not discriminate but adds equally with all frequency components of a signal. **Thus, in Generative models, the use of Gaussians further indicates the addition of the minimum possible bias to the model.** This is further supported by the <a href="https://en.wikipedia.org/wiki/Central_limit_theorem">Central Limit Theorem</a> according to which as the number of independent random variables added together tend to infinity, their distribution approaches a Gaussian.
 
 ### Covariance and multivariate Gaussians 
 
@@ -111,3 +111,14 @@ $$ \begin{equation}
 \end{equation} $$
 
 $$ \textbf{X} = (X_1, X_2, X_3, \dots , X_d) $$ where each $$X_k$$ is a random variable and $$ \mu = (\mu_1, \mu_2, \mu_3, \dots , \mu_d) $$
+
+To make sure that we have grasped the concept of sufficient statistics and a multivariate distribution, Let us take up $$X = (X_1, X_2)$$ where  $$X_1, X_2$$ are two random variables with means $$\mu = (\mu_1,\mu_2)$$ but having the same variance.
+
+$$x_1 \sim N(\mu_1, \sigma^2)$$,		$$x_2 \sim N(\mu_2, \sigma^2)$$ where $$x_1$$ and $$x_2$$ are samples from $$X_1$$ and $$X_2$$.
+
+We need the means and the covariance matrix as sufficient statistics.
+
+1. $$(\mu_1,\mu_2)$$				: **2 parameters**
+2. $$COV [X] = $$\begin{pmatrix} VAR[X_1] & COV[X_1, X_2] \\ COV[X_2, X_1] & VAR[X_2] \end{pmatrix}$$ . Since this matrix is symmetric, we only need one of $$COV[X_1, X_2] or COV[X_2, X_1]$$							: **3 parameters**
+
+**So number of sufficient statistics is : 5.**
