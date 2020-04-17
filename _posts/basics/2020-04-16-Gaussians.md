@@ -85,7 +85,7 @@ $$
 Note : $$ cov[X,X] = Var[X] = \sigma^2(X) $$ and $$ cov[X,Y] = cov[Y,X] $$
 
 The covariance matrix of a d-length vector $$\textbf{X}$$ where each feature is a random variable, on the other hand gives us an idea of how each feature is related with respect to the others. 
-ie. for $$ \textbf{X} = (X_1, X_2, X_3, \dots , X_d) $$ where each $$X_k$$ is a random variable, The covariance matrix is as shown,
+ie. for $$ \textbf{X} = (x_1, x_2, x_3, \dots , x_d) $$ where each $$x_k$$ is a random variable, The covariance matrix is as shown,
 
 
 $$
@@ -93,10 +93,10 @@ $$
 \label{covmat}
 COV [X] = 
 \begin{pmatrix}
-    VAR[X_1] & COV[X_1, X_2] & COV[X_1, X_3] & \ldots & COV[X_1, X_d] \\
-    COV[X_2, X_1] & VAR[X_2] & COV[X_2, X_3] & \ldots & COV[X_2, X_d] \\
+    VAR[x_1] & COV[x_1, x_2] & COV[x_1, x_3] & \ldots & COV[x_1, x_d] \\
+    COV[x_2, x_1] & VAR[x_2] & COV[x_2, x_3] & \ldots & COV[x_2, x_d] \\
     \vdots & \vdots & \vdots & \ldots & \vdots \\
-    COV[X_d, X_1] & COV[X_d, X_2] & COV[X_d, X_2] &\ldots & VAR[X_d]
+    COV[x_d, x_1] & COV[x_d, x_2] & COV[x_d, x_2] &\ldots & VAR[x_d]
 \end{pmatrix}
 \end{equation*}
 $$
@@ -110,7 +110,7 @@ $$ \begin{equation}
             N(X | \mu, \Sigma) := {1 \over {(2\pi)}^{d\over 2} {|\Sigma|}^{1 \over 2}} e ^{-{1 \over 2}(X - \mu)^T \Sigma^{-1}(X - \mu) }
 \end{equation} $$
 
-$$ \textbf{X} = (X_1, X_2, X_3, \dots , X_d) $$ where each $$X_k$$ is a random variable and $$ \mu = (\mu_1, \mu_2, \mu_3, \dots , \mu_d) $$
+$$ \textbf{X} = (x_1, x_2, x_3, \dots , x_d) $$ where each $$x_k$$ is a random variable and $$ \mu = (\mu_1, \mu_2, \mu_3, \dots , \mu_d) $$
 
 To make sure that we have grasped the concept of sufficient statistics and a multivariate distribution, Let us take up $$X = (X_1, X_2)$$ where  $$X_1, X_2$$ are two random variables with means $$\mu = (\mu_1,\mu_2)$$ but having the same variance.
 
@@ -119,7 +119,54 @@ $$x_1 \sim N(\mu_1, \sigma^2)$$,		$$x_2 \sim N(\mu_2, \sigma^2)$$ where $$x_1$$ 
 We need the means and the covariance matrix as sufficient statistics.
 
 1. $$(\mu_1,\mu_2)$$				: **2 parameters**      
-2. $$COV [X] = \begin{pmatrix}    VAR[X_1] & COV[X_1, X_2] \\ 
-                                    COV[X_2, X_1] & VAR[X_2] \end{pmatrix}$$ . Since this matrix is symmetric, we only need one of $$COV[X_1, X_2] or COV[X_2, X_1]$$							: **3 parameters**
+2. $$COV [X] = \begin{pmatrix}    VAR[x_1] & COV[x_1, X_2] \\ COV[x_2, x_1] & VAR[x_2] \end{pmatrix}$$ . 
+                                    
+Since this matrix is symmetric, we only need one of $$COV[x_1, x_2]$$ or $$COV[x_2, x_1]$$		: **3 parameters**
 
 **So number of sufficient statistics is : 5.**
+
+Let us use this 2D distribution to have a look at the joint probability distribution. That is the probability of a sample of $$x_1$$ and a sample of $$x_2$$ occuring at the same time.
+
+$$\begin{equation} \label{joint} P(x_1, x_2) = P(x_2| x_1)P(x_1) \end{equation}$$  as indicated by the yellow region.
+
+![joint dist](https://i.imgur.com/Q5zfItq.png)
+
+Let's define the matrix notations. $$X$$ and $$\mu$$ are column vectors.
+
+$$X - \mu = \begin{pmatrix} x_1 - \mu_1 \\ x_2 - \mu_2 \end{pmatrix}$$
+
+$$\Sigma = \begin{pmatrix} VAR[x_1] & COV[x_1, x_2] \\ COV[x_2, x_1] & VAR[x_2] \end{pmatrix}$$
+
+If $$x_1$$ and $$x_2$$ are independent their covariance is $$0$$.
+
+$$\therefore \Sigma = \begin{pmatrix}\sigma^2 & 0 \\ 0 & \sigma^2 \end{pmatrix}$$
+
+$$
+\begin{align*}
+|\Sigma| &= \begin{vmatrix} \sigma^2 & 0 \\ 0 & \sigma^2 \end{vmatrix}\\
+         &= \sigma^4
+\end{align*}
+
+\begin{equation}
+\therefore \sigma^2=|\Sigma|^{1 \over 2}
+\end{equation} $$
+
+Now starting from \ref{joint},
+
+$$
+
+\begin{align*}
+P(x_1,x_2) &= P(x_2 | x_1) P(x_1) \\
+&= P(x_2) * P(x_1) \\
+&= {1 \over \sqrt{2\pi\sigma^2}}e^{-{1 \over {2\sigma^2}}(x_2 - \mu_1)^2} * {1 \over \sqrt{2\pi\sigma^2}}e^{-{1 \over {2\sigma^2}}(x_2 - \mu_2)^2} \\
+&= {1 \over 2\pi|\Sigma|^{1 \over 2}}e^{(-{1 \over 2}[(x_1 - \mu_1)(x_2 - \mu_2)] \begin{pmatrix}\sigma^2 & 0 \\ 0 & \sigma^2 \end{pmatrix}^{-1} \begin{pmatrix}x_1 - \mu_1 \\ x_2 - \mu_2 \end{pmatrix})} \\
+&= {1 \over {(2\pi)}^{d\over 2} {|\Sigma|}^{1 \over 2}} e ^{-{1 \over 2}(X - \mu)^T \Sigma^{-1}(X - \mu) }
+\end{align*} 
+
+\begin{equation}
+\label{final}
+\therefore P(x_1,x_2)={1 \over {(2\pi)}^{d\over 2} {|\Sigma|}^{1 \over 2}} e ^{-{1 \over 2}(X - \mu)^T \Sigma^{-1}(X - \mu) }
+\end{equation}
+$$
+
+We see that \ref{final} is the same as the expression for multivariate Gaussians. This fundamental understanding is crucial to grasping the concepts of likelihood and Maximum Likelihood Estimation which shall be the next post in this **Basics** section.
