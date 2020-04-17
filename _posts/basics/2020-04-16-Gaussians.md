@@ -139,13 +139,14 @@ If $$x_1$$ and $$x_2$$ are independent their covariance is $$0$$.
 
 $$\therefore \Sigma = \begin{pmatrix}\sigma^2 & 0 \\ 0 & \sigma^2 \end{pmatrix}$$
 
-$$
-\begin{align*}
+Let's have a look at the determinant.
+
+$$\begin{align*}
 |\Sigma| &= \begin{vmatrix} \sigma^2 & 0 \\ 0 & \sigma^2 \end{vmatrix}\\
          &= \sigma^4
-\end{align*}
+\end{align*}$$
 
-\begin{equation}
+$$\begin{equation}
 \therefore \sigma^2=|\Sigma|^{1 \over 2}
 \end{equation} $$
 
