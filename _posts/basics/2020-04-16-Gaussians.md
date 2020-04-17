@@ -150,7 +150,7 @@ $$\begin{equation}
 \therefore \sigma^2=|\Sigma|^{1 \over 2}
 \end{equation} $$
 
-Now let's explot the independence of $$x_1$$ and $$x_2$$ meaning $$P(x_2 | x_1) = P(x_2)$$,
+Now let's explot the independence of $$x_1$$ and $$x_2$$ meaning \\( P(x_2 | x_1) = P(x_2) \\),
 
 $$\begin{align*}
 P(x_1,x_2) &= P(x_2 | x_1) P(x_1) \\
