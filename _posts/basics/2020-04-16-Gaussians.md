@@ -150,10 +150,11 @@ $$\begin{equation}
 \therefore \sigma^2=|\Sigma|^{1 \over 2}
 \end{equation} $$
 
-Now let's explot the independence of $$x_1$$ and $$x_2$$ meaning \\( P(x_2 | x_1) = P(x_2) \\),
+Now let's explot the independence of $$x_1$$ and $$x_2$$ meaning
 
-$$\begin{align*}
-P(x_1,x_2) &= P(x_2 | x_1) P(x_1) \\
+$$\begin{align*} 
+P(x_2 | x_1) &= P(x_2)\\
+\therefore P(x_1,x_2) &= P(x_2 | x_1) P(x_1) \\
 &= P(x_2) * P(x_1) \\
 &= {1 \over \sqrt{2\pi\sigma^2}}e^{-{1 \over {2\sigma^2}}(x_2 - \mu_1)^2} * {1 \over \sqrt{2\pi\sigma^2}}e^{-{1 \over {2\sigma^2}}(x_2 - \mu_2)^2} \\
 &= {1 \over 2\pi|\Sigma|^{1 \over 2}}e^{(-{1 \over 2}[(x_1 - \mu_1)(x_2 - \mu_2)] \begin{pmatrix}\sigma^2 & 0 \\ 0 & \sigma^2 \end{pmatrix}^{-1} \begin{pmatrix}x_1 - \mu_1 \\ x_2 - \mu_2 \end{pmatrix})} \\
