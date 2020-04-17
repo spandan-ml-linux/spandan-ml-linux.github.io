@@ -119,7 +119,7 @@ $$x_1 \sim N(\mu_1, \sigma^2)$$,		$$x_2 \sim N(\mu_2, \sigma^2)$$ where $$x_1$$ 
 We need the means and the covariance matrix as sufficient statistics.
 
 1. $$(\mu_1,\mu_2)$$				: **2 parameters**      
-2. $$COV [X] = $$\begin{pmatrix}    VAR[X_1] & COV[X_1, X_2] \\ 
+2. $$COV [X] = \begin{pmatrix}    VAR[X_1] & COV[X_1, X_2] \\ 
                                     COV[X_2, X_1] & VAR[X_2] \end{pmatrix}$$ . Since this matrix is symmetric, we only need one of $$COV[X_1, X_2] or COV[X_2, X_1]$$							: **3 parameters**
 
 **So number of sufficient statistics is : 5.**
