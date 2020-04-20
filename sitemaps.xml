@@ -19,4 +19,34 @@
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url>
+      <loc>https://spandanji.github.io//Pap1-UNET/</loc>
+      <lastmod>2020-04-12</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>https://spandanji.github.io//Gaussians/</loc>
+      <lastmod>2020-04-16</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>https://spandanji.github.io//QuteBrowser/</loc>
+      <lastmod>2020-04-14</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://spandanji.github.io//Basics/</loc>
+      <lastmod>2020-04-16</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>https://spandanji.github.io//Digesting-Research/</loc>
+      <lastmod>2020-04-14</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
 </urlset> 
